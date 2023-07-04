@@ -8,7 +8,7 @@ TARGET = exoMake
 build: main.c ${FILES}
 	${CC} ${FLAGS} -o ${TARGET} main.c ${FILES}
 
-testTXT: ${TARGET}
+test: ${TARGET}
 	./${TARGET} < tests.txt
 
 testPROG: test.c ${FILES}
